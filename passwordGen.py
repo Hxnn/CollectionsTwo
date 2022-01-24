@@ -9,11 +9,11 @@ choice1n2 = choice1 + choice2
 random.shuffle(choice1n2)
 choiceALL = choice1 + choice2 + choice3 + choice4
 random.shuffle(choiceALL)
-choiceTotall = choice1n2 + choiceALL
-choiceSUM = 24 - len(choiceTotall)
-choiceADD = [random.choice('abcdefghijklmnopqrstuvwxyz') for x in range(choiceSUM)]
-if len(choiceTotall) < 24:
-    print(''.join(choiceTotall + choiceADD))
-    print('Totale Characters:', len(choiceTotall + choiceADD))
+choiceTotal = choice1n2 + choiceALL
+choiceE = 24 - len(choiceTotal)
+choiceADD = [random.choice('abcdefghijklmnopqrstuvwxyz') for x in range(choiceE)]
+if len(choiceTotal) < 24:
+    print(''.join(choiceTotal + choiceADD))
+    print('Totale karakters:', len(choiceTotal + choiceADD))
 else:
-    print(choiceTotall)
+    print(choiceTotal)
